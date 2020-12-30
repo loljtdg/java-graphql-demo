@@ -1,0 +1,17 @@
+type Query {
+    users: [User]
+    
+    notes: [Note]
+}
+
+type Mutation {
+    newUser(input: UserInput): User!
+    updateUser(id: Int, input: UserInput): User!
+    deleteUser(id: Int): Boolean
+
+    newNote(input: NoteInput): Note!
+    updateNote(id: Int, input: NoteInput): Note!
+    deleteNote(id: Int): Boolean
+}
+
+scalar Date

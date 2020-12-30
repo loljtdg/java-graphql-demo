@@ -1,0 +1,15 @@
+type Note {
+    id: Int
+    user: User
+    title: String
+    content: String
+
+    createTime: Date
+    updateTime: Date
+}
+
+input NoteInput {
+    userId: Int
+    title: String
+    content: String
+}

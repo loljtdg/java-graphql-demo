@@ -1,0 +1,19 @@
+scalar Date
+
+type User {
+    id: Int
+    username: String
+    password: String
+    email: String   
+    name: String
+
+    createTime: Date
+    updateTime: Date
+}
+
+input UserInput {
+    username: String
+    password: String
+    email: String   
+    name: String
+}
